@@ -1,6 +1,6 @@
 const { Schema } = require("mongoose");
 
-const todoSchema = new Schema({
+const taskSchema = new Schema({
   task: {
     type: String,
   },
@@ -9,4 +9,4 @@ const todoSchema = new Schema({
   },
 });
 
-module.exports = todoSchema;
+module.exports = taskSchema;
