@@ -12,4 +12,8 @@ const goalSchema = new Schema({
   todoList: [taskSchema],
 });
 
+goalSchema.virtual("taskCount").get(function () {
+  return this.todoList.length;
+});
+
 module.exports = goalSchema;
