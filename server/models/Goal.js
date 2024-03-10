@@ -1,5 +1,7 @@
 const { Schema } = require("mongoose");
 
+const todoSchema = require("./Todo");
+
 const goalSchema = new Schema({
   goal: {
     type: String,
@@ -7,11 +9,7 @@ const goalSchema = new Schema({
   status: {
     type: String,
   },
-  todoList: [
-    {
-      type: String,
-    },
-  ],
+  todoList: [],
 });
 
 module.exports = goalSchema;
